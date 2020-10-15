@@ -10,6 +10,7 @@ app.get('/', (req,res) => {
     res.render('index.ejs');
 })
 
+
 app.post('/cuit', async (req,res) => {
     const cuit = req.body.cuit;
     const detections = await testOCR(cuit);
@@ -35,6 +36,7 @@ async function testOCR(cuit){
     //detections.forEach(text => console.log(text));
     return detections;
 }
+
 
 testOCR(123);
 

@@ -98,6 +98,9 @@ dist
 # vuepress build output
 .vuepress/dist
 
+# apiKey.json
+apiKey.json
+
 # Serverless directories
 .serverless/
 
